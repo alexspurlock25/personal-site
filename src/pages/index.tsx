@@ -1,4 +1,5 @@
 import * as React from "react"
+import { Link } from "gatsby"
 
 // data
 const links = [
@@ -18,6 +19,7 @@ const IndexPage = () => {
       <h1>
         Hi, my name is Alex
       </h1>
+      <Link to="/projects">Projects</Link>
       <ul>
         {links.map(link => (
           <li key={link.url}>
