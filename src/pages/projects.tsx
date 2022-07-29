@@ -1,14 +1,16 @@
 import * as React from 'react'
-import { Link } from 'gatsby'
+import { graphql } from 'gatsby'
+import { MDXRenderer } from 'gatsby-plugin-mdx'
+import Layout from '../components/layout'
 
-const ProjectsPage = () => {
+// data types
+import { ProjectData } from '../misc/Types'
+
+const ProjectsPage = (props: { data: ProjectData }) => {
     return (
-        <main>
-            <title>Projects - Alexander Spurlock</title>
-            <h1>Projects</h1>
-            <Link to='/'>Back Home</Link>
-            <p>A list of my projects</p>
-        </main>
+        <Layout pageTitle='Projects'>
+            <p>Projects</p>
+        </Layout>
     )
 }
 
