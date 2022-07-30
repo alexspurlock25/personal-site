@@ -4,8 +4,11 @@ import {
     container, heading, navLinks, navLinkItem, navLinkText, siteTitle
 } from './layout.module.css'
 
+// data types
+import { SiteMetadata } from '../misc/Types'
+
 const Layout = (props: { pageTitle: String, children: React.ReactNode }) => {
-    const data = useStaticQuery(graphql`
+    const data: SiteMetadata = useStaticQuery(graphql`
         query {
             site {
                 siteMetadata {
@@ -32,5 +35,6 @@ const Layout = (props: { pageTitle: String, children: React.ReactNode }) => {
         </div>
     )
 }
+
 
 export default Layout
