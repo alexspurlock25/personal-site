@@ -1,35 +1,21 @@
 {
   "name": "alexander-spurlock",
-  "version": "1.0.0",
   "private": true,
-  "description": "alexander-spurlock",
-  "author": "Alexander Spurlock",
-  "keywords": [
-    "gatsby"
-  ],
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "develop": "gatsby develop",
-    "start": "gatsby develop",
-    "build": "gatsby build",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "typecheck": "tsc --noEmit"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "@mdx-js/mdx": "^1.6.22",
-    "@mdx-js/react": "^1.6.22",
-    "gatsby": "^4.19.2",
-    "gatsby-plugin-image": "^2.19.0",
-    "gatsby-plugin-mdx": "^3.19.0",
-    "gatsby-plugin-sharp": "^4.19.0",
-    "gatsby-source-filesystem": "^4.19.0",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@types/node": "^17.0.45",
     "@types/react": "^18.0.15",
     "@types/react-dom": "^18.0.6",
-    "typescript": "^4.7.4"
+    "@vitejs/plugin-react": "^2.0.0",
+    "vite": "^3.0.0"
   }
 }
