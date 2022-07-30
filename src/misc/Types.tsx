@@ -1,4 +1,4 @@
-export interface ProjectData {
+export interface Project {
     allMdx: {
         nodes: [
             {
@@ -10,4 +10,12 @@ export interface ProjectData {
             }
         ]
     }
-} 
+}
+
+export interface SiteMetadata {
+    site: {
+        siteMetadata: {
+            title: String
+        }
+    }
+}
