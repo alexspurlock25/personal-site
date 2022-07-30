@@ -19,11 +19,11 @@ const Nav = () => {
                         <ul>
                             {/* item 1 */}
                             <li>
-                                <Link to="/" onClick={() => setHeaderText("Home")}>Home</Link>
+                                <Link to="/">Home</Link>
                             </li>
                             {/* item 2 */}
                             <li>
-                                <Link to="/projects" onClick={() => setHeaderText("Projects")}>Projects</Link>
+                                <Link to="/projects">Projects</Link>
                             </li>
                         </ul>
                     </nav>
