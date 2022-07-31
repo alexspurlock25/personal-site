@@ -9,6 +9,9 @@ import HomePage from '../pages/HomePage'
 import ProjectsPage from '../pages/ProjectsPage'
 import Header from './Header'
 
+const liStyles = "w-32 h-12 bg-green-200"
+const linkStyles = "h-full grid place-items-center"
+
 const Nav = () => {
     return (
         <React.Fragment>
@@ -16,14 +19,14 @@ const Nav = () => {
             <Router>
                 <div>
                     <nav>
-                        <ul>
+                        <ul className='flex justify-center gap-2'>
                             {/* item 1 */}
-                            <li>
-                                <Link to="/">Home</Link>
+                            <li className={liStyles}>
+                                <Link className={linkStyles} to="/">Home</Link>
                             </li>
                             {/* item 2 */}
-                            <li>
-                                <Link to="/projects">Projects</Link>
+                            <li className={liStyles}>
+                                <Link className={linkStyles} to="/projects">Projects</Link>
                             </li>
                         </ul>
                     </nav>
