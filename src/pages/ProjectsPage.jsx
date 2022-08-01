@@ -10,7 +10,7 @@ const ProjectsPage = () => {
     return (
         <React.Fragment>
             <TextCard text={ projectsData.temp } />
-            <div>
+            <div className='m-auto w-full text-center mt-10'>
                 <a className='bg-green-200' href={ projectsData.ghLink } target="_blank">GitHub</a>
             </div>
         </React.Fragment>
