@@ -1,6 +1,6 @@
 import * as React from 'react'
-import Card from '../components/Card'
 import ProfilePicture from '../components/ProfilePicture'
+import TextCard from '../components/TextCard'
 
 const containerStyles = 'container mx-auto grid justify-center content-center mt-5'
 const aboutMeData = {
@@ -11,9 +11,7 @@ const HomePage = () => {
     return (
         <div className={ containerStyles }>
             <ProfilePicture />
-            <Card>
-                { aboutMeData.aboutMe }
-            </Card>
+            <TextCard text={ aboutMeData.aboutMe } />
         </div>
     )
 }
