@@ -11,9 +11,9 @@ const HomePage = () => {
     return (
         <div className={ containerStyles }>
             <ProfilePicture />
-            <Card>
+            <div>
                 { aboutMeData.aboutMe }
-            </Card>
+            </div>
         </div>
     )
 }
