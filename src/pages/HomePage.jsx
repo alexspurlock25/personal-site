@@ -11,7 +11,7 @@ const HomePage = () => {
     return (
         <div className={ containerStyles }>
             <ProfilePicture />
-            <div>
+            <div className=' m-auto w-11/12 mt-10'>
                 { aboutMeData.aboutMe }
             </div>
         </div>
