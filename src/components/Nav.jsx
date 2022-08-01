@@ -9,7 +9,7 @@ import HomePage from '../pages/HomePage'
 import ProjectsPage from '../pages/ProjectsPage'
 import Header from './Header'
 
-const liStyles = "w-32 h-12 bg-green-200"
+const liStyles = "w-32 h-12 bg-stormy-sky text-slate-200"
 const linkStyles = "h-full grid place-items-center"
 
 const Nav = () => {
