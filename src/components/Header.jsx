@@ -1,7 +1,7 @@
 import * as React from 'react'
 
-const containerStyles = 'grid justify-center content-center w-full h-60 bg-gradient-to-r from-thunder to-deep-royal mb-2'
-const headerStyles = 'text-slate-200 text-lg'
+const containerStyles = 'grid content-center w-full h-60 bg-gradient-to-r from-thunder to-deep-royal mb-2'
+const headerStyles = 'text-slate-200 font-serif text-5xl text-center'
 
 const Header = () => {
     return (
