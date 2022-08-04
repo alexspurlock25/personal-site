@@ -9,8 +9,7 @@ const data = {
 
 const ProjectsPage = () => {
     	return (
-            <div className='mx-auto w-max'>
-                <TextCard text={ data.temp } />
+            <div className=''>
                 <ProjectList />	
             </div>
         )	
