@@ -1,5 +1,5 @@
 const styles = {
-    footer: 'mt-auto grid grid-flow-col auto-rows-cols-max justify-items-center content-center bg-gradient-to-r from-thunder to-deep-royal h-16 text-slate-200',
+    footer: 'mt-auto py-5 grid grid-flow-col auto-rows-cols-max justify-items-center content-center bg-gradient-to-r from-thunder to-deep-royal h-16 text-slate-200',
     a: 'bg-foam w-20 h-10 grid content-center text-center'
 }
 
