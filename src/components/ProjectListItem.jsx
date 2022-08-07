@@ -1,12 +1,12 @@
 import React from 'react'
 
 const styles = {
-	container: 'border my-5 p-2 mx-auto max-w-md rounded',
-	containerHeader: 'flex justify-between mb-2',
+	container: 'border my-5 p-2 mx-auto max-w-sm rounded',
+	containerHeader: 'flex justify-between',
 	title: 'font-bold text-lg',
-	desc: '',
-	link: 'bg-stormy-sky text-slate-200 text-center px-3 py-1 h-min ml-1',
-	lang: 'text-sm bg-deep-royal text-white h-min max-w-fit px-3 py-1 rounded',
+	desc: 'my-2',
+	link: 'bg-deep-royal text-slate-200 text-center px-3 py-1 h-min ml-1 rounded',
+	lang: 'text-xs bg-baby-bird text-white h-min max-w-fit px-3 py-1 rounded',
 }
 
 const ProjectListItem = ({ title, desc, link, lang }) => {
@@ -14,12 +14,10 @@ const ProjectListItem = ({ title, desc, link, lang }) => {
 		<div className={ styles.container }>
 			<div className={ styles.containerHeader }>
 				<div className={ styles.title }>{ title }</div>
-				<div className='flex justify-end items-center'>
-					<div className={ styles.lang }>{ lang }</div>
-					<a className={ styles.link } href={link} target='_blank'>Code</a>
-				</div>
+				<a className={ styles.link } href={link} target='_blank'>Code</a>
 			</div>
 			<div className={ styles.desc }>{ desc }</div>
+			<div className={ styles.lang}>{ lang }</div>
 		</div>
 	)
 }
