@@ -17,7 +17,7 @@ const ProjectList = () => {
 
 	console.log(repos)
 	return (
-		<div> { repos.map(items => <TextCard key={ items.id } text={ items.id } /> ) } </div>
+		<div> { repos.map(items => <ProjectListItem key={ items.id } title={ items.name } desc={ items.description } /> ) } </div>
 	)
 }
 export default ProjectList
