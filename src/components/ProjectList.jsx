@@ -1,6 +1,9 @@
 import { useState, useEffect } from 'react'
 import ProjectListItem from './ProjectListItem'
 
+const styles = {
+	grid: 'md:flex md:justify-center md:my-5 md:grid md:grid-cols-2 md:mx-auto md:w-max md:gap-2'
+}
 const ProjectList = () => {
 	const [repos, setRepos] = useState([])
 
@@ -16,7 +19,7 @@ const ProjectList = () => {
 
 	console.log(repos)
 	return (
-		<div> 
+		<div className={ styles.grid }> 
 			{ 
 				repos.map(items => 
 					<ProjectListItem key={ items.id } title={ items.name } link={ items.html_url } lang={ items.language } topics={ items.topics } desc={ items.description } /> 

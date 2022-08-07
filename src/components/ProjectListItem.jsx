@@ -1,7 +1,7 @@
 import React from 'react'
 
 const styles = {
-	container: 'border my-5 p-2 mx-auto max-w-sm rounded',
+	container: 'border my-5 md:my-0 p-2 max-w-sm rounded',
 	containerHeader: 'flex justify-between',
 	title: 'font-bold text-lg',
 	desc: 'my-2',
