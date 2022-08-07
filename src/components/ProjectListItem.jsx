@@ -6,7 +6,7 @@ const styles = {
 	title: 'font-bold text-lg',
 	desc: '',
 	link: 'bg-stormy-sky text-slate-200 text-center px-3 py-1 h-min ml-1',
-	lang: 'text-sm bg-deep-royal text-white h-min w-min px-3 py-1 rounded',
+	lang: 'text-sm bg-deep-royal text-white h-min max-w-fit px-3 py-1 rounded',
 }
 
 const ProjectListItem = ({ title, desc, link, lang }) => {
