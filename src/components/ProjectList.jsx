@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react'
 import ProjectListItem from './ProjectListItem'
-import TextCard from './TextCard'
 
 const ProjectList = () => {
 	const [repos, setRepos] = useState([])
@@ -17,7 +16,7 @@ const ProjectList = () => {
 
 	console.log(repos)
 	return (
-		<div> { repos.map(items => <ProjectListItem key={ items.id } title={ items.name } desc={ items.description } /> ) } </div>
+		<div> { repos.map(items => <ProjectListItem key={ items.id } title={ items.name } link={ items.html_url } desc={ items.description } /> ) } </div>
 	)
 }
 export default ProjectList
