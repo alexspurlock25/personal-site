@@ -16,7 +16,13 @@ const ProjectList = () => {
 
 	console.log(repos)
 	return (
-		<div> { repos.map(items => <ProjectListItem key={ items.id } title={ items.name } link={ items.html_url } desc={ items.description } /> ) } </div>
+		<div> 
+			{ 
+				repos.map(items => 
+					<ProjectListItem key={ items.id } title={ items.name } link={ items.html_url } lang={ items.language } topics={ items.topics } desc={ items.description } /> 
+				) 
+			} 
+		</div>
 	)
 }
 export default ProjectList
