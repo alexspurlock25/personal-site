@@ -1,12 +1,12 @@
  import React from 'react'
 
 const styles = {
-	container: 'border my-5 md:my-0 p-2 max-w-sm rounded bg-black text-white shadow hover:shadow-lg hover:scale-95 duration-200',
+	container: 'w-full border my-5 md:my-0 p-2 max-w-sm rounded bg-black text-white shadow hover:shadow-lg hover:scale-95 duration-200',
 	containerHeader: 'flex justify-between',
 	title: 'font-bold text-lg',
 	desc: 'my-2',
 	lang: 'text-xs bg-baby-bird text-white h-min max-w-fit px-3 py-1 rounded',
-	link: "h-full"
+	link: 'flex items-stretch'
 }
 
 const ProjectListItem = ({ title, desc, link, lang }) => {
