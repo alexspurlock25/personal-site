@@ -4,11 +4,14 @@ import PageFooter from './components/PageFooter'
 
 const App = () => {
     return (
-        <div className='flex flex-col h-screen'>
-            <Header/>
-            <Nav />
-            <PageFooter />
+        <div>
+            <div className='flex flex-col min-h-screen'>
+                <Header/>
+                <Nav />
+                <PageFooter />
+            </div>
         </div>
+        
     )
 }
 

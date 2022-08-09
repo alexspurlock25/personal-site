@@ -1,6 +1,6 @@
 const styles = {
-    footer: 'mt-auto py-5 grid grid-flow-col auto-rows-cols-max justify-items-center content-center bg-gradient-to-r from-thunder to-deep-royal h-16 text-slate-200',
-    a: 'bg-foam w-20 h-10 grid content-center text-center'
+    footer: 'mt-auto py-5 grid grid-flow-col auto-rows-cols-max justify-items-center content-center h-16 text-white',
+    a: 'bg-black w-20 h-10 grid content-center text-center rounded shadow hover:shadow-lg hover:translate-y-px duration-200'
 }
 
 const PageFooter = () => {

@@ -8,8 +8,10 @@ import {
 import HomePage from '../pages/HomePage'
 import ProjectsPage from '../pages/ProjectsPage'
 
-const liStyles = "w-32 h-12 bg-stormy-sky text-slate-200"
-const linkStyles = "h-full grid place-items-center"
+const styles = {
+    li: 'w-32 h-12 bg-black text-white rounded shadow hover:shadow-xl hover:translate-y-px duration-200',
+    a: 'h-full grid place-items-center'
+}
 
 const Nav = () => {
     return (
@@ -18,13 +20,11 @@ const Nav = () => {
                 <div>
                     <nav>
                         <ul className='flex justify-center gap-2'>
-                            {/* item 1 */}
-                            <li className={liStyles}>
-                                <Link className={linkStyles} to="/">Home</Link>
+                            <li className={ styles.li }>
+                                <Link className={ styles.a } to="/">Home</Link>
                             </li>
-                            {/* item 2 */}
-                            <li className={liStyles}>
-                                <Link className={linkStyles} to="/projects">Projects</Link>
+                            <li className={ styles.li }>
+                                <Link className={ styles.a } to="/projects">Projects</Link>
                             </li>
                         </ul>
                     </nav>
