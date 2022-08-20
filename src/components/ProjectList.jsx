@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import ProjectListItem from './ProjectListItem'
 
 const styles = {
-	grid: 'md:my-5 md:grid md:grid-cols-2 mx-auto w-max md:gap-2'
+	grid: 'my-5 md:grid md:grid-cols-2 mx-auto w-max md:gap-2'
 }
 const ProjectList = () => {
 	const [repos, setRepos] = useState([])
@@ -17,7 +17,6 @@ const ProjectList = () => {
 		fetchData()
 	}, [])
 
-	console.log(repos)
 	return (
 		<div className={ styles.grid }> 
 			{ 
