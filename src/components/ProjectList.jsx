@@ -24,7 +24,7 @@ const ProjectList = () => {
 					<ProjectListItem 
 						key={ items.name }
 						title={ items.name } 
-						link={ items.html_url } 
+						href={ items.html_url } 
 						lang={ items.language } 
 						desc={ items.description } 
 					/> 
