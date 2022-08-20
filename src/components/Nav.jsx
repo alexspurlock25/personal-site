@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Link, Routes, Route } from 'react-router-dom'
 import HomePage from '../pages/HomePage'
 import OpenSourceProjectsPage from '../pages/OpenSourceProjectsPage'
 import PrivateProjectsPage from '../pages/PrivateProjectsPage'
+import DevLogPage from '../pages/DevLogPage'
 
 const styles = {
     li: 'w-32 h-12 bg-black text-white rounded shadow hover:shadow-xl hover:translate-y-px duration-200',
@@ -62,6 +63,7 @@ const Nav = () => {
                         <Route path="/" element={ <HomePage /> } />
                         <Route path='/private-projects' element={ <PrivateProjectsPage /> } />
                         <Route path='/open-projects' element={ <OpenSourceProjectsPage /> } />
+                        <Route path='/private-projects/worthy/dev-log' element={ <DevLogPage /> } />
                     </Routes>
 
                 </div>
