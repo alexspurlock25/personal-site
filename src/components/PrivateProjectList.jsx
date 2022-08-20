@@ -22,7 +22,6 @@ const PrivateProjectList = () => {
         fetchData()
     }, [])
 
-
     return (
         <div className={ styles.grid }>
         {
