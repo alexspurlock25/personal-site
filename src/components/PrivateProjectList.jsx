@@ -5,7 +5,7 @@ import ProjectListItem from './ProjectListItem'
 import { db } from '../firebase.config'
 
 const styles = {
-	grid: 'md:my-5 md:grid md:grid-cols-2 mx-auto w-max md:gap-2'
+	grid: 'my-5 md:grid md:grid-cols-2 mx-auto w-max md:gap-2'
 }
 const PrivateProjectList = () => {
     const [data, setData] = useState([])
@@ -28,10 +28,12 @@ const PrivateProjectList = () => {
         {
             data.map((item) => 
                 <ProjectListItem 
+                    key={ item.title } 
                     title={ item.title } 
                     desc={ item.desc } 
-                    link={ item['log-link'] } 
-                    key={ item.title } 
+                    lang={ item.lang }
+                    link={ item['log-link'] }
+                    hasDevLog={ item.hasDevLog }
                 />
             )
         }           
