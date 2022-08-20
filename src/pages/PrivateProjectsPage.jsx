@@ -1,5 +1,7 @@
+import PrivateProjectList from '../components/PrivateProjectList'
+
 const PrivateProjectsPage = () => {
-	return <div>Private projects page</div>
+	return <PrivateProjectList />
 }
 
 export default PrivateProjectsPage
