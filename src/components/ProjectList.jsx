@@ -27,7 +27,6 @@ const ProjectList = () => {
 						title={ items.name } 
 						link={ items.html_url } 
 						lang={ items.language } 
-						topics={ items.topics } 
 						desc={ items.description } 
 					/> 
 				) 
