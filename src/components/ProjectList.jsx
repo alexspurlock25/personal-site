@@ -22,7 +22,14 @@ const ProjectList = () => {
 		<div className={ styles.grid }> 
 			{ 
 				repos.map(items => 
-					<ProjectListItem key={ items.id } title={ items.name } link={ items.html_url } lang={ items.language } topics={ items.topics } desc={ items.description } /> 
+					<ProjectListItem 
+						key={ items.name }
+						title={ items.name } 
+						link={ items.html_url } 
+						lang={ items.language } 
+						topics={ items.topics } 
+						desc={ items.description } 
+					/> 
 				) 
 			} 
 		</div>
