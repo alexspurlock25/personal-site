@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom"
 const styles = {
 	containerHeader: 'flex justify-between',
 	title: 'font-bold text-lg',
@@ -7,9 +6,9 @@ const styles = {
 	pill: 'text-xs bg-baby-bird text-white h-min max-w-fit px-3 py-1 rounded'
 }
 
-const ProjectListItem = ({ title, desc='', link = '/', href = null, lang = '', hasDevLog = false }) => {
+const ProjectListItem = ({ title, desc='', href = null, lang = '' }) => {
 	return (
-		<Link hrefLang={ href } to={ link } target={ link !== '/' ? '_self' : '_blank' } className={ styles.link }>
+		<a href={ href } target='_blank' className={ styles.link } >
 			<div>
 				<div className={ styles.containerHeader }>
 					<div className={ styles.title }>{ title }</div>
@@ -17,8 +16,7 @@ const ProjectListItem = ({ title, desc='', link = '/', href = null, lang = '', h
 				</div>
 				{ desc ? <div className={ styles.desc }>{ desc }</div> : null }				
 			</div>
-			{ hasDevLog ? <div className={ styles.pill }>Dev Log</div> : null }
-		</Link>
+		</a>
 	)
 }
 
