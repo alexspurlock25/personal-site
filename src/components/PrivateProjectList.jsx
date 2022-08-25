@@ -31,8 +31,6 @@ const PrivateProjectList = () => {
                     title={ item.title } 
                     desc={ item.desc } 
                     lang={ item.lang }
-                    link={ item['log-link'] }
-                    hasDevLog={ item.hasDevLog }
                 />
             )
         }           
