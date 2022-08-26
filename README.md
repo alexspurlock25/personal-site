@@ -1,6 +1,5 @@
 # alexander-spurlock
-My personal website using React. Using Vite as well. Still a work in progress
-
+My personal website using React. Using Vite as well
 
 ## Plans
 - [x] Home Page
@@ -8,4 +7,3 @@ My personal website using React. Using Vite as well. Still a work in progress
 - [x] Projects Page
   - [x] GitHub API
   - [ ] Upload my old projects from college
-- [ ] Dev Blog Page

@@ -1,11 +1,11 @@
-import React from 'react'
+const styles = {
+    container: 'container flex-wrap rounded mt-10 text-center'
+}
 
-const Card = ({ children }) => {
+export default Card = ({ children }) => {
     return (
-        <div className='container flex-wrap rounded mt-10 text-center'>
+        <div className={ styles.container }>
             { children }
         </div>
     )
 }
-
-export default Card
