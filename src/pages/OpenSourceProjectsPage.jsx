@@ -1,7 +1,5 @@
 import ProjectList from '../components/ProjectList'
 
-const OpenSourceProjectsPage = () => {
-	return <ProjectList />
-}	
+const OpenSourceProjectsPage = () => <ProjectList />
 
 export default OpenSourceProjectsPage
