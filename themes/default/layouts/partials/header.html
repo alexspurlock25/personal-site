@@ -1,0 +1,17 @@
+<div class="flex flex-col justify-center">
+    <div class="font-serif text-5xl text-center py-10 drop-shadow">
+        <header>Alexander Spurlock</header>
+    </div>
+
+    <section class="flex justify-center">
+        
+        <ul class='flex flex-row'>
+            {{ range .Site.Menus.nav }} 
+            <li class="mx-2 w-32 h-12 bg-black text-white rounded shadow hover:shadow-xl hover:translate-y-px duration-200">
+                <a class="h-full grid place-items-center" href="{{ .URL }}">{{ .Name }}</a>
+            </li>
+            {{ end }}
+         </ul>
+
+    </section>
+</div>
