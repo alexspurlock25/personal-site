@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "tw": "npx tailwindcss -i ./themes/default/static/css/input.css -o ./themes/default/static/css/output.css --watch",
-    "hugo": "hugo serve"
+    "hugo": "hugo serve -D"
   },
   "keywords": [],
   "author": "",

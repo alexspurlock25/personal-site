@@ -8,8 +8,8 @@ summaryLength = 10
 [Params]
   custom_css = "css/output.css"
   profile_picture = "images/profile-picture.png"
-  keywords = ["default_key_1", "default_key_2"]
-  description = "This is the default description of the website."
+  keywords = ["blog", "tech blog", "portfolio", "profile", "resume", "github", "projects"]
+  description = "A portfolio blog website to share my experiences as well as my resume."
 
 [sitemap]
   changefreq = "weekly"
@@ -30,7 +30,7 @@ summaryLength = 10
     weight = 2
 
     [[menu.nav]]
-    identifier = "open-source"
-    name = "Open Source"
-    url = "/open-source/"
+    identifier = "blog"
+    name = "Blog"
+    url = "/blog/"
     weight = 3

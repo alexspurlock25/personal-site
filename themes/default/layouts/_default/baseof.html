@@ -1,11 +1,23 @@
 <!DOCTYPE html>
 <html>
     {{- partial "head.html" . -}}
-    <body class="flex flex-col min-h-screen">
+    <body class="flex flex-col min-h-screen container mx-auto">
         {{- partial "header.html" . -}}
         <div id="content">
         {{- block "main" . }}{{- end }}
         </div>
         {{- partial "footer.html" . -}}
+		
+		<script>
+		  if (window.netlifyIdentity) {
+		    window.netlifyIdentity.on("init", user => {
+		      if (!user) {
+		        window.netlifyIdentity.on("login", () => {
+		          document.location.href = "/admin/";
+		        });
+		      }
+		    });
+		  }
+		</script>
     </body>
 </html>

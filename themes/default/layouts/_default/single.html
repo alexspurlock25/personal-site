@@ -1,0 +1,19 @@
+{{ define "title" }}
+  <!-- This will override the default value set in baseof.html; i.e., "{{.Site.Title}}" in the original example-->
+  {{ .Title }} &ndash; {{ .Site.Title }}
+{{ end }}
+{{ define "main" }}
+<div class="lg:mx-56">
+  <!-- <div class="mb-7">
+    <img src="{{ .Params.Thumbnail }}" class="object-cover h-96 min-w-full rounded-lg shadow-lg">
+  </div> -->
+
+  <div class="prose md:prose-xl mx-auto">
+    <div class="text-center">
+      <h1>{{ .Title }}</h1>
+      <small>{{ .Date | time.Format ":date_medium" }}</small>
+    </div>
+    <div class="prose-img:rounded-lg">{{ .Content }}</div>
+  </div>
+</div>
+{{ end }}
