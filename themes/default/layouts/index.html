@@ -1,0 +1,8 @@
+{{ define "main" }}
+<div class="container my-10 mx-auto">
+    <img class="mt-5 w-60 rounded-full mx-auto shadow-lg" src="{{ relURL .Site.Params.profile_picture }}" />
+    <div class="m-auto w-11/12 mt-10 md:w-5/12 tracking-wider">
+        {{ .Site.Data.aboutme.aboutMe }}	
+    </div>
+</div>
+{{ end }}
