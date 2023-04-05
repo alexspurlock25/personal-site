@@ -1,7 +1,12 @@
 ---
-title: "Blog"
+title: Blog
+keywords:
+  - coding
+  - programming
+  - tech
 date: 2023-04-05T13:26:59-04:00
 draft: false
+description: Tech, coding and other related blog. Welcome.
 ---
 
 After making my wife's blog website, I was inspired to make my own. I have a little to share, too!
