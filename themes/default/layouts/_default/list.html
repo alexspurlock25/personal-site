@@ -1,0 +1,15 @@
+{{ define "main" }}
+<div class="my-5 md:grid md:grid-cols-2 mx-auto w-max md:gap-2">
+  {{ range .Pages }}
+	<a href={{ .Params.Href }} target='_blank' class="block p-6 max-w-sm rounded border bg-black text-white shadow hover:shadow-lg hover:scale-95 duration-200" >
+		<div>
+			<div class="flex justify-between">
+				<div class="font-bold text-lg">{{ .Title }}</div>
+				<div class=" text-xs bg-baby-bird text-white h-min max-w-fit px-3 py-1 rounded">{{ .Params.Language }}</div>
+			</div>
+			<div class="my-2">{{ .Content }}</div>
+		</div>
+	</a>
+  {{ end }}
+</div>
+{{ end }}
