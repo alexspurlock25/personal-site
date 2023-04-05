@@ -30,7 +30,7 @@ summaryLength = 10
     weight = 2
 
     [[menu.nav]]
-    identifier = "open-source"
-    name = "Open Source"
-    url = "/open-source/"
+    identifier = "blog"
+    name = "Blog"
+    url = "/blog/"
     weight = 3
