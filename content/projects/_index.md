@@ -1,13 +1,14 @@
 ---
 title: Projects
-date: 2023-04-05T00:15:50-04:00
-draft: false
-description: Page for side projects. open-source and private collection.
 keywords:
   - open-source
   - side projects
   - code
+date: 2023-04-05T00:15:50-04:00
+draft: false
+description: Page for side projects. open-source and private collection.
 ---
+Welcome to my projects! This a new site, keep that in mind. More is coming.
 
-As a Dad of two, I have little time to work on my many projects. I have many, of course. As each project is completed, I will add them here. This list also contains a mix of my open-source projects. Go a check those out on GitHub.
+Happy Easter!
 
