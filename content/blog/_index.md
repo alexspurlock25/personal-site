@@ -8,6 +8,4 @@ date: 2023-04-05T13:26:59-04:00
 draft: false
 description: Tech, coding and other related blog. Welcome.
 ---
-
-After making my wife's blog website, I was inspired to make my own. I have a little to share, too!
-
+Welcome to my little spot on the Internet! I decided that I should have a blog to track my experiences and to help me retain information. I hope you find something worth your time!
