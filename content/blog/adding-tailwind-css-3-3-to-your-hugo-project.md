@@ -56,6 +56,20 @@ Create `input.css` file in `themes/{theme name}/static/css/` and add the followi
 @tailwind components;
 @tailwind utilities;
 ```
+Now, you have to link the `output.css` to your html files. Do this in your `head.html` partial file.
+Something like so:
+
+```html
+<link rel="stylesheet" href='{{ relURL .Site.Params.custom_css }}'>
+```
+
+Finally, add the path of the css file in your `config.toml`
+
+```toml
+custom_css = "css/output.css"
+```
+
+You don't have to specify the whole path. Hugo knows that `css/` is stored in the `static/` folder.
 
 Add these two lines to your ***npm*** scripts in `package.json` because you will be running these commands a lot. Note the `-watch` command. This will rebuild the `output.css` everytime you add/change a css propoerty in your html files.
 
@@ -80,19 +94,4 @@ npm run hugo
 
 Now, every time you add an inline tailwind style to a div, for example, you will see that first, Tailwind will auto rebuild the output css file, and then Hugo rebuilds the site every time it sees the output css file changing! Cool!
 
-
-One last thing. You have to link the `output.css` to your html files. Do this in your `head.html` partial file.
-Something like so:
-
-```html
-<link rel="stylesheet" href='{{ relURL .Site.Params.custom_css }}'>
-```
-
-Finally, add the path of the css file in your `config.toml`
-
-```toml
-custom_css = "css/output.css"
-```
-
-You don't have to specify the whole path. Hugo knows that `css/` is stored in the `static/` folder.
 Go and make something cool!
