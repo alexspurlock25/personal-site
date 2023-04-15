@@ -10,5 +10,4 @@ description: Page for side projects. open-source and private collection.
 ---
 Welcome to my projects! This a new site, keep that in mind. More is coming.
 
-Happy Easter!
 
