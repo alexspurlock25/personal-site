@@ -15,5 +15,15 @@
 	<small>{{ .Date | time.Format ":date_medium" }}</small>
     <div class="prose-img:rounded-lg">{{ .Content }}</div>
   </div>
+
+
+  <div class="text-center flex flex-col bg-black text-white rounded p-1">
+  <span>This page uses Google services, which may serve non-personalised cookies for advertising, analytics and security.</span>
+  <a 
+    href="https://policies.google.com/technologies/cookies?hl=en_IE "
+    class="w-min mx-auto whitespace-nowrap bg-slate-700 p-1 rounded">
+    Learn More
+  </a>
+</div>
 </div>
 {{ end }}
