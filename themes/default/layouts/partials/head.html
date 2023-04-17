@@ -5,8 +5,5 @@
     <meta name="description" content="{{ trim .Site.Params.Description "\n"}}{{ if .Params.Description }}; {{ trim .Params.Description "\n" }}{{ end }}">
 	<meta name="robots" content="index,follow">
     <link rel="stylesheet" href='{{ relURL .Site.Params.custom_css }}'>
-	<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1176596032601896"
-     crossorigin="anonymous"></script>
     <title>{{ block "title" . }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
 </head>
