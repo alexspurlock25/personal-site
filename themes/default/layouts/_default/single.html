@@ -4,9 +4,6 @@
 {{ end }}
 {{ define "main" }}
 <div class="lg:mx-56 p-3">
-  <!-- <div class="mb-7">
-    <img src="{{ .Params.Thumbnail }}" class="object-cover h-96 min-w-full rounded-lg shadow-lg">
-  </div> -->
 
   <div class="prose md:prose-xl mx-auto my-10">
     <div class="text-center">
@@ -16,14 +13,5 @@
     <div class="prose-img:rounded-lg">{{ .Content }}</div>
   </div>
 
-
-  <div class="text-center flex flex-col bg-black text-white rounded p-1">
-  <span>This page uses Google services, which may serve non-personalised cookies for advertising, analytics and security.</span>
-  <a 
-    href="https://policies.google.com/technologies/cookies?hl=en_IE "
-    class="w-min mx-auto whitespace-nowrap bg-slate-700 p-1 rounded">
-    Learn More
-  </a>
-</div>
 </div>
 {{ end }}
