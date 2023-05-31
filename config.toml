@@ -1,4 +1,4 @@
-baseURL = 'http://alexanderspurlock.com/'
+baseURL = 'https://alexanderspurlock.com/'
 languageCode = 'en-us'
 title = 'Alexander Spurlock'
 theme = 'default'
@@ -7,7 +7,7 @@ summaryLength = 10
 
 [Params]
   custom_css = "css/output.css"
-  profile_picture = "images/profile-picture.png"
+  profile_picture = "images/profile-picture.jpeg"
   keywords = ["portfolio", "profile", "resume", "github", "projects"]
   description = "A portfolio website to share my experiences as well as my resume."
 
@@ -28,3 +28,9 @@ summaryLength = 10
     name = "Projects"
     url = "/projects/"
     weight = 2
+
+    [[menu.nav]]
+    identifier = "github"
+    name = "GitHub"
+    url = "https://github.com/alexspurlock25"
+    weight = 3
