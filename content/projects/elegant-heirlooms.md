@@ -8,7 +8,7 @@ keywords:
   - reactjs project
 date: 2023-07-11
 ---
-One of my dreams is to help people with my skills and talents. I did that here. I reached out to a friend of my mom's, and asked if they would like me to redesign their website! Let's call her Don, for privacy reasons.
+One of my dreams is to help people with my skills and talents. I did that here. I reached out to a friend of my mom's, and asked if they would like me to redesign their website! Let's call them Don, for privacy reasons.
 
 They accepted.
 
